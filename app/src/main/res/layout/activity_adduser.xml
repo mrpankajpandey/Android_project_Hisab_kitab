@@ -1,0 +1,168 @@
+<RelativeLayout
+
+    android:layout_gravity="center"
+    tools:context=".Adduser"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background_login"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="650dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:elevation="20dp"
+        app:cardBackgroundColor="#D9E6EA"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+
+            android:text="CREATE CUSTOMER HERE"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="100dp"
+            android:hint="Name"
+            app:boxBackgroundColor="#fff"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/purple_700"
+            app:boxStrokeWidth="1dp"
+            app:helperText="Required"
+            android:textColorHint="@color/purple_700"
+            app:helperTextTextColor="#D50000"
+            app:startIconDrawable="@drawable/ic_person_add">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:lines="1"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="200dp"
+            android:hint="E-mail"
+            app:boxBackgroundColor="#fff"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/purple_700"
+            app:boxStrokeWidth="1dp"
+            app:helperText="Required"
+            android:textColorHint="@color/purple_700"
+            app:helperTextTextColor="#D50000"
+            app:startIconDrawable="@drawable/ic_mail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:lines="1"
+                android:maxLength="20"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="300dp"
+            android:hint="Mobile"
+            app:boxBackgroundColor="#fff"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/purple_700"
+            app:boxStrokeWidth="1dp"
+            app:helperText="Required"
+            android:textColorHint="@color/purple_700"
+            app:helperTextTextColor="#D50000"
+            app:startIconDrawable="@drawable/ic_phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone"
+                android:maxLength="12"
+                android:lines="1"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:inputType="textPhonetic"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="400dp"
+            android:hint="Address"
+            app:boxBackgroundColor="#fff"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/purple_700"
+            app:boxStrokeWidth="1dp"
+            app:helperText="Required"
+            app:helperTextTextColor="#D50000"
+            android:textColorHint="@color/purple_700"
+            app:startIconDrawable="@drawable/ic_home_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Address"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="520dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="#0E0E0E"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="onClick" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:text="Get Customer List"
+            android:textSize="15sp"
+            android:layout_marginTop="600dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/purple_700"
+
+            android:onClick="list"
+            android:gravity="center"
+            android:layout_height="25dp" />
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

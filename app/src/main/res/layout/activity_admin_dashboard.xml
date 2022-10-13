@@ -1,0 +1,70 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin_dashboard"
+
+    android:background="@drawable/background_login"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv_email"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_margin="30dp"
+            android:textColor="@color/white"
+            android:background="#30ffffff"
+            android:backgroundTint="#30ffffff"
+            android:textColorHint="@color/white"
+            android:textAlignment="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv_password"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/tv_email"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textAlignment="center"
+            android:layout_height="wrap_content" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_marginTop="130dp"
+        android:elevation="40dp"
+        app:cardElevation="20dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        android:background="@drawable/background_login"
+        android:layout_height="500dp" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/background_login"
+            android:layout_height="wrap_content" >
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="80dp"
+                android:src="@drawable/ic_add_note"
+                android:layout_marginTop="-30dp"
+                android:layout_height="60dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/logout"
+                android:onClick="logout"
+                android:textSize="20dp"
+                android:text="Logout"
+                android:layout_centerInParent="true"
+                tools:ignore="onClick"
+                android:layout_height="wrap_content" />
+         </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

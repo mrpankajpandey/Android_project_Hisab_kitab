@@ -1,0 +1,18 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  android:backgroundTint="@color/white"
+android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <ImageView-->
+<!--        android:layout_width="500dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:src="@drawable/hisab"-->
+<!--        android:layout_marginTop="-250dp"-->
+<!--        android:layout_height="1200dp" />-->
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/main2"
+        android:layout_height="match_parent" />
+</LinearLayout>
